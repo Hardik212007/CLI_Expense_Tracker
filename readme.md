@@ -1,10 +1,10 @@
-# 💰 Expense Tracker CLI
+# Expense Tracker CLI
 
 A lightweight, feature-rich command-line expense tracker built with Python and SQLite. Track your spending, set budgets, get smart insights, and visualize trends — all from your terminal.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -27,7 +27,7 @@ python3 expense_tracker.py --help
 
 ---
 
-## 📖 Usage
+## Usage
 
 All commands follow this pattern:
 
@@ -37,7 +37,7 @@ python3 expense_tracker.py <command> [arguments] [options]
 
 ---
 
-### ➕ Add an Expense
+### Add an Expense
 
 ```bash
 python3 expense_tracker.py add <amount> <category> "<description>" [--date YYYY-MM-DD]
@@ -65,11 +65,6 @@ python3 expense_tracker.py add 120 utilities "Electricity bill"
 
 ---
 
-### 📋 List Expenses
-
-```bash
-python3 expense_tracker.py list [--category CATEGORY] [--start-date YYYY-MM-DD] [--end-date YYYY-MM-DD]
-```
 
 | Option          | Description                        |
 |-----------------|------------------------------------|
@@ -90,17 +85,7 @@ python3 expense_tracker.py list --category food
 python3 expense_tracker.py list --start-date 2026-06-01 --end-date 2026-06-30
 ```
 
-**Sample Output:**
-
-```
-ID    | Date       | Category        | Amount     | Description
-----------------------------------------------------------------------
-1     | 2026-06-08 | food            | $50.00     | Dinner with friends
-```
-
----
-
-### 📊 Spending Summary
+### Spending Summary
 
 View a visual breakdown of spending by category for a given month.
 
@@ -130,7 +115,7 @@ transport       | $15.00   | █████████
 
 ---
 
-### 💵 Budget Management
+### Budget Management
 
 Set monthly spending limits per category and track them.
 
@@ -161,7 +146,7 @@ python3 expense_tracker.py budget view
 
 ---
 
-### 💡 Smart Insights
+### Smart Insights
 
 Get an intelligent summary of your spending for the current month, including budget alerts.
 
@@ -172,20 +157,20 @@ python3 expense_tracker.py insights
 **Sample Output:**
 
 ```
-💡 Smart Spending Insights 💡
+Smart Spending Insights 
 ----------------------------------------
 Total spent this month: $185.00
 Highest spending category: food ($120.00)
 
 Budget Alerts:
-  🚨 Over budget in food: Spent $120.00 / Budget $100.00
-  ⚠️  Nearing budget in transport: Spent $42.00 / Budget $50.00
-  ✅ All other categories within budget!
+   Over budget in food: Spent $120.00 / Budget $100.00
+   Nearing budget in transport: Spent $42.00 / Budget $50.00
+  All other categories within budget!
 ```
 
 ---
 
-### 🗑️ Delete an Expense
+### Delete an Expense
 
 ```bash
 python3 expense_tracker.py delete <id>
@@ -202,7 +187,7 @@ python3 expense_tracker.py delete 3
 
 ---
 
-### 📤 Export to CSV
+### Export to CSV
 
 Export all your expense data to a CSV file.
 
@@ -226,7 +211,7 @@ python3 expense_tracker.py export --file my_expenses.csv
 
 ---
 
-### 📈 Month-over-Month Trends
+### Month-over-Month Trends
 
 See how your total spending changes month to month with directional indicators.
 
@@ -246,8 +231,7 @@ Month-over-Month Trends
 
 ---
 
-## ✨ Key Features
-
+## Key Features
 | Feature                  | Description                                                        |
 |--------------------------|--------------------------------------------------------------------|
 | **Zero Dependencies**    | Uses only Python's standard library — no `pip install` needed      |
@@ -262,7 +246,7 @@ Month-over-Month Trends
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 FastTrack/
@@ -274,6 +258,3 @@ FastTrack/
 
 ---
 
-## 📝 License
-
-This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
