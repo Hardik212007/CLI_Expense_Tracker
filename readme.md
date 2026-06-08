@@ -13,8 +13,7 @@ A lightweight, feature-rich command-line expense tracker built with Python and S
 ### Installation
 
 ```bash
-git clone <your-repo-url>
-cd FastTrack
+git clone https://github.com/Hardik212007/CLI_Expense_Tracker.git
 ```
 
 ### Run
